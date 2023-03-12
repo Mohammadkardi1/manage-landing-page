@@ -1,0 +1,165 @@
+:root {
+    /* Primary */
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+
+    /* Neutral */
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    height: 10000px;
+}
+
+
+
+/* Start Navbar Section */
+.navbar {
+    background-color: none;
+    z-index:2;
+}
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+.navbar .navbar-nav li a {
+    color: #212529;
+}
+.navbar .navbar-nav li a:hover {
+    color: #7F7F7F;
+}
+.navbar .right-button {
+    background-color:var(--Bright-Red);
+    color: #FFFFFF;
+    font-size:15px; 
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+/* End Navbar Section */
+
+
+
+
+/* Start Products Section */
+.products .products-text .card-body button {
+    background-color:var(--Bright-Red);
+    color: #FFFFFF;
+    font-size:15px; 
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+/* End Products Section */
+
+
+
+/* Start Manage Section */
+
+
+
+
+
+
+
+
+
+/* End Manage Section */
+
+
+
+
+/* Start Testimonials  Section */
+
+/* End Testimonials  Section */
+
+
+
+
+
+
+
+
+
+
+/* Start Testimonials Section */
+.testimonials .carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.testimonials .carousel .carousel-inner .carousel-caption {
+    position: static;
+}
+.testimonials .carousel .carousel-inner .carousel-caption .caption-content {
+    position: relative;
+}
+
+.testimonials .carousel .carousel-item h6 {
+    color: black;
+}
+.testimonials .carousel .carousel-item .role {
+    font-size:15px
+}
+.testimonials .carousel .carousel-item .caption-text {
+    font-size: 16px;
+    color: black;
+}
+.testimonials .testimonials-button  button {
+    background-color:var(--Bright-Red);
+    color: #FFFFFF;
+    font-size:15px; 
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+/* End Testimonials Section */
+
+
+
+/* Start Team Section */
+.team {
+    background-color: var(--Bright-Red);
+}
+.team .team-text {
+    color: #FFFFFF;
+}
+.team .team-button button {
+    background-color: #FFFFFF;
+    color:  var(--Bright-Red);
+    font-size:15px; 
+    padding: 10px 25px;
+    border-radius: 25px;
+    border:0;
+}
+/* End Team Section */
+
+
+
+
+/* Start Footer Section */
+.footer {
+    background-color: var(--Very-Dark-Blue);
+    color: #FFFFFF;
+}
+
+
+
+/* End Footer Section */
+
+
+
+
+/* Start Attribution Section */
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+/* End Attribution Section */
+
+
