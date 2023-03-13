@@ -269,7 +269,63 @@ body {
     color: #FFFFFF;
 }
 
+.footer .footer-body {
+    display:grid;
+    /* grid-template-columns: min-content 1fr auto; */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "logo nav form" "social nav copyright";
+    gap: 60px;
+}
 
+@media ()
+
+.footer .footer-body .logo {
+    grid-area: logo
+}
+.footer .footer-body .social {
+    grid-area: social
+}
+.footer .footer-body .social ul {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-body .social ul li {
+    font-size: 40px;
+}
+.footer .footer-body .social ul li:hover,
+.footer .footer-body .nav ul li:hover {
+    color:var(--Bright-Red);
+}
+.footer .footer-body .nav {
+    grid-area: nav;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size:18px;
+}
+.footer .footer-body .form {
+    grid-area: form;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer .footer-body .form button {
+    background-color: var(--Bright-Red);
+    color: #FFFFFF;
+    font-size: 17px;
+    padding: 0px 20px;
+    border-radius: 18px;
+    height: 50%;
+}
+.footer .footer-body .form input {
+    width: 200px;
+    border-radius: 18px;
+    height: 50%;
+
+}
+.footer .footer-body .copyright {
+    grid-area: copyright
+}
 
 /* End Footer Section */
 
