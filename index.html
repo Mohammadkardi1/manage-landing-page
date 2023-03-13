@@ -34,37 +34,36 @@
             <a class="nav-link" aria-current="page" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" href="#products">Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#footer">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Careers</a>
+            <a class="nav-link" href="#careers">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Community</a>
+            <a class="nav-link" href="#community">Community</a>
           </li>
         </ul>
-        <button class="btn right-button" type="submit">Get Started</button>
+        <button class="btn btn-red right-button" type="submit">Get Started</button>
       </div>
     </div>
   </nav>
   <!-- End Navbar Section -->
 
-    
 
 
   <!-- Start Products Section -->
-  <div class="products mb-5">
+  <div class="products mb-5" id="products">
     <div class="container">
       <div class="row">
-        <div class="col-xm-12 col-lg-6 order-2 order-lg-2 mt-xl-5 products-text">
+        <div class="col-xm-12 col-lg-6 order-2 order-lg-2  products-text">
           <div class="card text-center text-lg-start border-0">
-            <div class="card-body">
-              <h5 class="card-title display-4 fw-bold mb-xl-5">Bring everyone together to build better products.</h5>
+            <div class="card-body p-0">
+              <h5 class="card-title display-5 fw-bold mb-xl-5">Bring everyone together to build better products.</h5>
               <p class="card-text text-black-50 mb-xl-5">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-              <button href="#" class="btn">Get Started</button>
+              <button href="#" class="btn btn-red ">Get Started</button>
             </div>
           </div>
         </div>
@@ -87,7 +86,7 @@
         <div class="col-xm-12 col-lg-6  mb-lg-0">
           <div class="card text-center text-lg-start border-0">
             <div class="card-body pt-0">
-              <h5 class="card-title display-4 fw-bold mb-xl-5">What’s different about Manage?</h5>
+              <h5 class="card-title display-5 fw-bold mb-xl-5">What’s different about Manage?</h5>
               <p class="card-text text-black-50 mb-xl-5">
                 Manage provides all the functionality your team needs, without 
                 the complexity. Our software is tailor-made for modern digital 
@@ -132,19 +131,16 @@
         </div>
       </div>
     </div>
-    <!-- <div class="underlay">
-
-    </div> -->
   </div>
   <!-- End Manage Section -->
 
 
 
 
-    <!-- Start Testimonials Section -->
-    <div class="testimonials mb-5">
+    <!-- Start Community Section -->
+    <div class="community mb-5" id="community">
       <div class="container">
-        <h1 class="text-center">What they've said</h1>
+        <p class="text-center display-5">What they've said</p>
         <div id="carouselExampleCaptions" class="carousel slide text-center">
           <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -201,43 +197,41 @@
           </div>
         </div>
         <div class="testimonials-button text-center">
-          <button href="#" class="btn">Get Started</button>
+          <button href="#" class="btn-red">Get Started</button>
         </div>
       </div>
     </div>
-  <!-- End Testimonials Section -->
+  <!-- End Community Section -->
 
 
 
 
 
-  <!-- Start Team Section -->
-  <div class="team py-5">
+  <!-- Start Careers Section -->
+  <div class="careers py-5" id="careers">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-8 team-text text-center text-md-start">
-          <h3>Simplify how your team works today.</h3>
+        <div class="col-12 col-lg-8 team-text text-center text-lg-start">
+          <h3 class="m-0">Simplify how your team works today.</h3>
         </div>
-        <div class="col-12 col-md-4 text-center team-button">
+        <div class="col-12 col-lg-4 text-center team-button">
           <button>Get Started</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Team Section -->
+  <!-- End Ceam Section -->
 
 
 
 
   <!-- Start Footer Section -->
-  <div class="footer py-5 mb-5">
+  <div class="footer pt-5 pb-4" id="footer">
     <div class="container">
-      <div class="footer-body">
-
-        <div class="logo">
-          <img src="./images/logo.svg" alt="">
+      <div class="footer-body mb-3 m-lg-0">
+        <div class="logo text-center text-lg-start">
+          <img src="./images/logo-white.svg" alt="">
         </div>
-
         <div class="social">
           <ul class="list-unstyled d-flex">
             <li class="me-2"><i class="fa-brands fa-square-facebook"></i></li>
@@ -247,72 +241,44 @@
             <li><i class="fa-brands fa-instagram"></i></li>
           </ul>
         </div>
-
-        <div class="nav px-4">
-          <ul class="list-unstyled">
+        <div class="nav px-lg-4">
+          <ul class="list-unstyled m-0">
             <li class="mb-4">Home</li>
             <li class="mb-4">Pricing</li>
             <li class="mb-4">Products</li>
             <li class="mb-4">About Us</li>
           </ul>
-          <ul  class="list-unstyled">
+          <ul  class="list-unstyled m-0">
             <li class="mb-4">Careers</li>
             <li class="mb-4">Community</li>
             <li>Privacy Policy</li>
           </ul>
         </div>
-
-
-
           <form class="form">
-
-            <div class="me-2">
-              <input type="text" class="form-control  is-invalid" id="validationServer01" value="Mark" required>
-              <div class="invalid-feedback">
+            <div class="form-input me-2">
+              <input type="text" class="form-control" id="validationServer01" value="Mohammad@gmail" required>
+              <div class="">
                 Please insert a valid email..
               </div>
             </div>
-            <div class="">
+            <div class="form-button">
               <button class="btn" type="submit">Go</button>
             </div>
           </form>
-
-
-
-        <div class="copyright">
-          <p>Copyright 2023 &copy; All Rights Reserved</p>
+        <div class="copyright text-center">
+          <p class="m-0">Copyright 2023 &copy; All Rights Reserved</p>
         </div>
-
-
-
-
-
-
-
-
-        
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Mohammadkardi1" target="_blank">Mohammad Kardi</a>.
       </div>
     </div>
   </div>
   <!-- End Footer Section -->
 
-
-
-
-  <div class="under-footer">
-
-  </div>
-
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
   </div>
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/all.min.js"></script>
 </body>
 </html>
-
-
-

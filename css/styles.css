@@ -11,12 +11,19 @@
 
     --pink: #FFF0EC;
 }
-
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
 }
 
+.btn-red {
+    background-color:var(--Bright-Red);
+    color: #FFFFFF;
+    font-size:15px; 
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+}
 
 
 /* Start Navbar Section */
@@ -31,14 +38,7 @@ body {
     color: #212529;
 }
 .navbar .navbar-nav li a:hover {
-    color: #7F7F7F;
-}
-.navbar .right-button {
-    background-color:var(--Bright-Red);
-    color: #FFFFFF;
-    font-size:15px; 
-    padding: 10px 25px;
-    border-radius: 25px;
+    color: var(--Bright-Red);
 }
 /* End Navbar Section */
 
@@ -62,18 +62,7 @@ body {
 .products .card {
     background: none;
 }
-.products .products-text .card-body button {
-    background-color:var(--Bright-Red);
-    color: #FFFFFF;
-    font-size:15px; 
-    padding: 10px 25px;
-    border-radius: 25px;
-}
 /* End Products Section */
-
-
-
-
 
 
 
@@ -83,23 +72,9 @@ body {
     position: relative;
     background:none;
 }
-/* .manage .underlay {
-    position: relative;
-} */
-/* .manage .underlay  {
-    position: absolute;
-    z-index: -1;
-    inset:0;
-    background-image:url("../images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-} */
-    /* transform: rotate(276deg); */
-
 .manage .card {
     background: none;
 }
-
-
 .manage .manage-list ol {
     counter-reset: count; 
     list-style:none;
@@ -194,63 +169,68 @@ body {
 
 
 
-
-
-/* Start Testimonials Section */
-.testimonials {
+/* Start Community Section */
+.community {
     position: relative;
 }
-.testimonials .carousel .carousel-indicators button{
+.community .carousel .carousel-indicators button{
     width: 10px;
     height: 10px;
     background: none;
     border: 3px solid var(--Bright-Red);
     border-radius: 50%;
 }
-.testimonials .carousel .carousel-indicators button.active {
+.community .carousel .carousel-indicators button.active {
     background-color: var(--Bright-Red);
     border: 3px solid var(--Bright-Red);
 }
-.testimonials .carousel .carousel-inner .carousel-caption {
+.community .carousel .carousel-inner .carousel-caption {
     position: static;
     background-color: #F7F7F7;
 }
-.testimonials .carousel .carousel-item img {
+.community .carousel .carousel-item img {
     width:100px;
     position: absolute;
     top: 11px;
     left: calc(50% - 47px);
 }
-.testimonials .carousel .carousel-item h6 {
+.community .carousel .carousel-item h6 {
     color: black;
 }
-.testimonials .carousel .carousel-item .role {
+.community .carousel .carousel-item .role {
     font-size:15px
 }
-.testimonials .carousel .carousel-item .caption-text {
+.community .carousel .carousel-item .caption-text {
     font-size: 16px;
     color: black;
     height: 60px;
 }
-.testimonials .testimonials-button  button {
-    background-color:var(--Bright-Red);
-    color: #FFFFFF;
-    font-size:15px; 
-    padding: 10px 25px;
-    border-radius: 25px;
-}
-/* End Testimonials Section */
+/* End Community Section */
 
 
 
-/* Start Team Section */
-.team {
+/* Start Careers Section */
+.careers {
     background-color: var(--Bright-Red);
+    position:relative;
+    z-index: 2;
 }
-.team .team-text {
+.careers::before {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url("../images/bg-tablet-pattern.svg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .35;
+}
+.careers .team-text {
     color: #FFFFFF;
 }
-.team .team-button button {
+.careers .team-button button {
     background-color: #FFFFFF;
     color:  var(--Bright-Red);
     font-size:15px; 
@@ -258,7 +238,7 @@ body {
     border-radius: 25px;
     border:0;
 }
-/* End Team Section */
+/* End Careers Section */
 
 
 
@@ -268,17 +248,23 @@ body {
     background-color: var(--Very-Dark-Blue);
     color: #FFFFFF;
 }
-
-.footer .footer-body {
-    display:grid;
-    /* grid-template-columns: min-content 1fr auto; */
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: "logo nav form" "social nav copyright";
-    gap: 60px;
+@media (min-width:992px) {
+    .footer .footer-body {
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "logo nav form" "social nav copyright";
+        gap: 60px;
+    }
 }
-
-@media ()
-
+@media (max-width:992px) {
+    .footer .footer-body {
+        display:grid;
+        justify-content: center;
+        align-items: start;
+        grid-template-areas:"form" "nav" "social" "logo" "copyright";
+        gap: 20px;
+    }
+}
 .footer .footer-body .logo {
     grid-area: logo
 }
@@ -309,36 +295,45 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
 }
+.footer .footer-body .form .form-button {
+    width: 25%;
+}
 .footer .footer-body .form button {
     background-color: var(--Bright-Red);
     color: #FFFFFF;
     font-size: 17px;
-    padding: 0px 20px;
     border-radius: 18px;
-    height: 50%;
+    height: 85%;
+    width: 100%;
+}
+.footer .footer-body .form .form-input {
+    width: 75%;
+}
+.footer .footer-body .form .form-input div {
+    font-size: .875em;
+    color: #b02a37; 
 }
 .footer .footer-body .form input {
-    width: 200px;
+    width: 100%;
+    height: 85%;
     border-radius: 18px;
-    height: 50%;
-
+    font-size: 13px;
+    border-color: #b02a37;
+}
+@media (min-width:992px) {
+    .footer .footer-body .form button {
+        height:50%;
+    }
+    .footer .footer-body .form input {
+        height:50%;
+    }
 }
 .footer .footer-body .copyright {
     grid-area: copyright
 }
-
-/* End Footer Section */
-
-
-
-
-/* Start Attribution Section */
-.attribution {
+.footer .attribution {
     font-size: 11px; 
     text-align: center;
-    color: hsl(228, 45%, 44%);
+    color: #FFFFFF;
 }
-
-/* End Attribution Section */
-
-
+/* End Footer Section */
