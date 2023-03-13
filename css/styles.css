@@ -46,6 +46,22 @@ body {
 
 
 /* Start Products Section */
+.products {
+    position: relative;
+}
+.products::before {
+    content: "";
+    position:absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    top: -50%;
+    left: 55%;
+}
+.products .card {
+    background: none;
+}
 .products .products-text .card-body button {
     background-color:var(--Bright-Red);
     color: #FFFFFF;
@@ -57,7 +73,33 @@ body {
 
 
 
+
+
+
+
+
 /* Start Manage Section */
+.manage {
+    position: relative;
+    background:none;
+}
+/* .manage .underlay {
+    position: relative;
+} */
+/* .manage .underlay  {
+    position: absolute;
+    z-index: -1;
+    inset:0;
+    background-image:url("../images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+} */
+    /* transform: rotate(276deg); */
+
+.manage .card {
+    background: none;
+}
+
+
 .manage .manage-list ol {
     counter-reset: count; 
     list-style:none;
@@ -155,12 +197,19 @@ body {
 
 
 /* Start Testimonials Section */
+.testimonials {
+    position: relative;
+}
 .testimonials .carousel .carousel-indicators button{
     width: 10px;
     height: 10px;
     background: none;
-    border: 3px solid black;
+    border: 3px solid var(--Bright-Red);
     border-radius: 50%;
+}
+.testimonials .carousel .carousel-indicators button.active {
+    background-color: var(--Bright-Red);
+    border: 3px solid var(--Bright-Red);
 }
 .testimonials .carousel .carousel-inner .carousel-caption {
     position: static;
