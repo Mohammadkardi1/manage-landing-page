@@ -195,7 +195,7 @@ body {
     left: calc(50% - 47px);
 }
 .community .carousel-inner .carousel-content  {
-    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 .community .carousel .carousel-item h6 {
     color: black;
